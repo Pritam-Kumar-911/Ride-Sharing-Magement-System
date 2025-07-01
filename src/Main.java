@@ -1,3 +1,4 @@
+import GUI.TermsPanel;
 import GUI.WelcomePanel;
 
 import javax.swing.*;
@@ -12,8 +13,11 @@ public class Main {
         mainPanel.setLayout(cardLayout);
 
         WelcomePanel welcome = new WelcomePanel(cardLayout, mainPanel);
+        TermsPanel terms = new TermsPanel(cardLayout, mainPanel);
+
 
         mainPanel.add(welcome, "welcome");
+        mainPanel.add(terms, "terms");
 
 
 

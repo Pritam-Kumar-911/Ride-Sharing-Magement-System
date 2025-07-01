@@ -1,3 +1,5 @@
+import GUI.RegistrationPanel;
+import GUI.RoleSelectionPanel;
 import GUI.TermsPanel;
 import GUI.WelcomePanel;
 
@@ -14,13 +16,15 @@ public class Main {
 
         WelcomePanel welcome = new WelcomePanel(cardLayout, mainPanel);
         TermsPanel terms = new TermsPanel(cardLayout, mainPanel);
-
+        RoleSelectionPanel roleSelection = new RoleSelectionPanel(cardLayout,mainPanel);
+        RegistrationPanel registerDriver = new RegistrationPanel(cardLayout, mainPanel, true);
+        RegistrationPanel registerRider = new RegistrationPanel(cardLayout, mainPanel, false);
 
         mainPanel.add(welcome, "welcome");
         mainPanel.add(terms, "terms");
-
-
-
+        mainPanel.add(roleSelection , "roleSelection");
+        mainPanel.add(registerDriver, "registerDriver");
+        mainPanel.add(registerRider, "registerRider");
 
         frame.add(mainPanel);
         frame.setSize(600, 400);

@@ -1,3 +1,4 @@
+import GUI.RoleSelectionPanel;
 import GUI.TermsPanel;
 import GUI.WelcomePanel;
 
@@ -14,12 +15,12 @@ public class Main {
 
         WelcomePanel welcome = new WelcomePanel(cardLayout, mainPanel);
         TermsPanel terms = new TermsPanel(cardLayout, mainPanel);
+        RoleSelectionPanel roleSelection = new RoleSelectionPanel(cardLayout,mainPanel);
 
 
         mainPanel.add(welcome, "welcome");
         mainPanel.add(terms, "terms");
-
-
+        mainPanel.add(roleSelection , "roleSelection");
 
 
         frame.add(mainPanel);

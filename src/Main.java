@@ -1,3 +1,5 @@
+import GUI.WelcomePanel;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -8,6 +10,13 @@ public class Main {
         JPanel mainPanel = new JPanel();
         CardLayout cardLayout = new CardLayout();
         mainPanel.setLayout(cardLayout);
+
+        WelcomePanel welcome = new WelcomePanel(cardLayout, mainPanel);
+
+        mainPanel.add(welcome, "welcome");
+
+
+
 
         frame.add(mainPanel);
         frame.setSize(600, 400);

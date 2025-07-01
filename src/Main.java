@@ -1,7 +1,4 @@
-import GUI.RegistrationPanel;
-import GUI.RoleSelectionPanel;
-import GUI.TermsPanel;
-import GUI.WelcomePanel;
+import GUI.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,12 +16,14 @@ public class Main {
         RoleSelectionPanel roleSelection = new RoleSelectionPanel(cardLayout,mainPanel);
         RegistrationPanel registerDriver = new RegistrationPanel(cardLayout, mainPanel, true);
         RegistrationPanel registerRider = new RegistrationPanel(cardLayout, mainPanel, false);
+        LoginPanel login = new LoginPanel(cardLayout, mainPanel);
 
         mainPanel.add(welcome, "welcome");
         mainPanel.add(terms, "terms");
         mainPanel.add(roleSelection , "roleSelection");
         mainPanel.add(registerDriver, "registerDriver");
         mainPanel.add(registerRider, "registerRider");
+        mainPanel.add(login, "login");
 
         frame.add(mainPanel);
         frame.setSize(600, 400);

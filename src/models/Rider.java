@@ -1,6 +1,6 @@
 package models;
 
-public class Rider extends Models.User {
+public class Rider extends models.User {
     private String studentId;
 
     public Rider(String name, String contact, String studentId) {

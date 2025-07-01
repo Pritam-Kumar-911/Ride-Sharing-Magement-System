@@ -17,6 +17,7 @@ public class Main {
         RegistrationPanel registerDriver = new RegistrationPanel(cardLayout, mainPanel, true);
         RegistrationPanel registerRider = new RegistrationPanel(cardLayout, mainPanel, false);
         LoginPanel login = new LoginPanel(cardLayout, mainPanel);
+        DriverDashboardPanel driverDash = new DriverDashboardPanel(cardLayout, mainPanel);
 
         mainPanel.add(welcome, "welcome");
         mainPanel.add(terms, "terms");
@@ -24,6 +25,7 @@ public class Main {
         mainPanel.add(registerDriver, "registerDriver");
         mainPanel.add(registerRider, "registerRider");
         mainPanel.add(login, "login");
+        mainPanel.add(driverDash, "driverDashboard");
 
         frame.add(mainPanel);
         frame.setSize(600, 400);

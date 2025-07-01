@@ -1,8 +1,8 @@
 package GUI;
 
-import Models.Driver;
-import Models.Rider;
-import Utils.DatabaseManager;
+import models.Driver;
+import models.Rider;
+import utils.DatabaseManager;
 
 import javax.swing.*;
 import java.awt.*;
@@ -41,12 +41,12 @@ public class RegistrationPanel extends JPanel {
             String contact = contactField.getText().trim();
             String extra = extraField.getText().trim();
 
-            if (Utils.Validator.isEmpty(name, contact, extra)) {
+            if (utils.Validator.isEmpty(name, contact, extra)) {
                 JOptionPane.showMessageDialog(mainPanel, "❌ All fields are required.");
                 return;
             }
 
-            if (!Utils.Validator.isValidContact(contact)) {
+            if (!utils.Validator.isValidContact(contact)) {
                 JOptionPane.showMessageDialog(mainPanel, "❌ Contact must be a valid 11-digit number starting with 03.");
                 return;
             }

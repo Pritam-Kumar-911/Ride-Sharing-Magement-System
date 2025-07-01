@@ -1,8 +1,8 @@
 
 package GUI;
 
-import Models.Ride;
-import Utils.DatabaseManager;
+import models.Ride;
+import utils.DatabaseManager;
 
 import javax.swing.*;
 import java.awt.*;

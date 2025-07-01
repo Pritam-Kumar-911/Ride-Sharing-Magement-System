@@ -42,7 +42,7 @@ public class LoginPanel extends JPanel {
             String contact = contactField.getText().trim();
             String role = (String) roleBox.getSelectedItem();
 
-            boolean found = Utils.DatabaseManager.isUserValid(name, contact, role);
+            boolean found = utils.DatabaseManager.isUserValid(name, contact, role);
 
             if (found) {
                 JOptionPane.showMessageDialog(mainPanel, "✅ Login successful as " + role);

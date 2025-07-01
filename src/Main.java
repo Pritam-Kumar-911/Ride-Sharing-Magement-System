@@ -5,6 +5,7 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
+        utils.DatabaseManager.initializeDatabase();
         JFrame frame = new JFrame("UniRide App");
 
         JPanel mainPanel = new JPanel();

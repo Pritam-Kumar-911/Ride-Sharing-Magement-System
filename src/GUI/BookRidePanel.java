@@ -1,6 +1,6 @@
 package GUI;
 
-import Utils.DatabaseManager;
+import utils.DatabaseManager;
 
 import javax.swing.*;
 import java.awt.*;
@@ -37,7 +37,7 @@ public class BookRidePanel extends JPanel {
                 try {
                     int rideId = Integer.parseInt(selected.split(",")[0].split(":")[1].trim());
 
-                    Utils.DatabaseManager.bookRideById(rideId);
+                    utils.DatabaseManager.bookRideById(rideId);
 
                     JOptionPane.showMessageDialog(mainPanel, "✅ Ride Accepted Successfully!");
                     loadRides();  // Refresh list

@@ -20,6 +20,7 @@ public class Main {
         DriverDashboardPanel driverDash = new DriverDashboardPanel(cardLayout, mainPanel);
         RiderDashboardPanel riderDash = new RiderDashboardPanel(cardLayout, mainPanel);
         CreateRidePanel createRide = new CreateRidePanel(cardLayout, mainPanel);
+        BookRidePanel bookRide = new BookRidePanel(cardLayout, mainPanel);
 
         mainPanel.add(welcome, "welcome");
         mainPanel.add(terms, "terms");
@@ -30,6 +31,9 @@ public class Main {
         mainPanel.add(driverDash, "driverDashboard");
         mainPanel.add(riderDash, "riderDashboard");
         mainPanel.add(createRide, "createRide");
+        mainPanel.add(bookRide, "bookRide");
+
+        cardLayout.show(mainPanel, "welcome");
 
 
         frame.add(mainPanel);
